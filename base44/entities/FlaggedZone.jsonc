@@ -1,0 +1,62 @@
+{
+  "name": "FlaggedZone",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name"
+    },
+    "state": {
+      "type": "string",
+      "title": "State"
+    },
+    "type": {
+      "type": "string",
+      "title": "Type",
+      "enum": [
+        "sundown_town",
+        "elevated_incident"
+      ]
+    },
+    "severity": {
+      "type": "string",
+      "title": "Severity",
+      "enum": [
+        "red",
+        "orange"
+      ]
+    },
+    "lat": {
+      "type": "number",
+      "title": "Latitude"
+    },
+    "lng": {
+      "type": "number",
+      "title": "Longitude"
+    },
+    "radius_miles": {
+      "type": "number",
+      "title": "Radius (Miles)"
+    },
+    "historical_note": {
+      "type": "string",
+      "title": "Historical Note"
+    },
+    "source": {
+      "type": "string",
+      "title": "Source"
+    },
+    "last_updated": {
+      "type": "string",
+      "title": "Last Updated"
+    }
+  },
+  "required": [
+    "name",
+    "state",
+    "type",
+    "severity",
+    "lat",
+    "lng"
+  ]
+}

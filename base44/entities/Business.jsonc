@@ -1,0 +1,66 @@
+{
+  "name": "Business",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name"
+    },
+    "category": {
+      "type": "string",
+      "title": "Category"
+    },
+    "city": {
+      "type": "string",
+      "title": "City"
+    },
+    "state": {
+      "type": "string",
+      "title": "State"
+    },
+    "address": {
+      "type": "string",
+      "title": "Address"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone"
+    },
+    "hours": {
+      "type": "string",
+      "title": "Hours"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "owner_community": {
+      "type": "string",
+      "title": "Owner Community"
+    },
+    "verified": {
+      "type": "boolean",
+      "title": "Verified",
+      "default": true
+    },
+    "verified_date": {
+      "type": "string",
+      "title": "Verified Date"
+    },
+    "lat": {
+      "type": "number",
+      "title": "Latitude"
+    },
+    "lng": {
+      "type": "number",
+      "title": "Longitude"
+    }
+  },
+  "required": [
+    "name",
+    "category",
+    "city",
+    "state",
+    "owner_community"
+  ]
+}

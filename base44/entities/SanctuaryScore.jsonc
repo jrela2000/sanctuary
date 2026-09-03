@@ -1,0 +1,166 @@
+{
+  "name": "SanctuaryScore",
+  "type": "object",
+  "properties": {
+    "zip_code": {
+      "type": "string",
+      "title": "Zip Code"
+    },
+    "city": {
+      "type": "string",
+      "title": "City"
+    },
+    "neighborhood": {
+      "type": "string",
+      "title": "Neighborhood"
+    },
+    "state": {
+      "type": "string",
+      "title": "State"
+    },
+    "composite_score": {
+      "type": "number",
+      "title": "Composite Score"
+    },
+    "pillars": {
+      "type": "object",
+      "title": "Pillars",
+      "properties": {
+        "safety": {
+          "type": "object",
+          "properties": {
+            "score": {
+              "type": "number"
+            },
+            "note": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "last_updated": {
+              "type": "string"
+            }
+          }
+        },
+        "schools": {
+          "type": "object",
+          "properties": {
+            "score": {
+              "type": "number"
+            },
+            "note": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "last_updated": {
+              "type": "string"
+            }
+          }
+        },
+        "financial": {
+          "type": "object",
+          "properties": {
+            "score": {
+              "type": "number"
+            },
+            "note": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "last_updated": {
+              "type": "string"
+            }
+          }
+        },
+        "community_resources": {
+          "type": "object",
+          "properties": {
+            "score": {
+              "type": "number"
+            },
+            "note": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "last_updated": {
+              "type": "string"
+            }
+          }
+        },
+        "minority_business": {
+          "type": "object",
+          "properties": {
+            "score": {
+              "type": "number"
+            },
+            "note": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "last_updated": {
+              "type": "string"
+            }
+          }
+        },
+        "faith_community": {
+          "type": "object",
+          "properties": {
+            "score": {
+              "type": "number"
+            },
+            "note": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "last_updated": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "displacement_risk": {
+      "type": "string",
+      "title": "Displacement Risk"
+    },
+    "displacement_note": {
+      "type": "string",
+      "title": "Displacement Note"
+    },
+    "demographic_trend": {
+      "type": "object",
+      "title": "Demographic Trend",
+      "properties": {
+        "black_population_pct_2015": {
+          "type": "number"
+        },
+        "black_population_pct_2020": {
+          "type": "number"
+        },
+        "black_population_pct_2025": {
+          "type": "number"
+        },
+        "trend_direction": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "zip_code",
+    "city",
+    "state",
+    "composite_score"
+  ]
+}
